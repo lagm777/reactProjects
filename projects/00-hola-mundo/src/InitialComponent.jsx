@@ -1,15 +1,15 @@
-import { useState, useCallback } from "react";
+import { useState } from 'react'
 
-function CountButton() {
-  const [count, setCount] = useState(0);
+function CountButton () {
+  const [count, setCount] = useState(0)
 
-  const handleClick = (value) => {
+  const handleClick = value => {
     if (value) {
-      setCount(count + 1);
+      setCount(count + 1)
     } else {
-      setCount(count - 1);
+      setCount(count - 1)
     }
-  };
+  }
 
   return (
     <div>
@@ -18,7 +18,7 @@ function CountButton() {
       <button onClick={() => handleClick(true)}>Sumar</button>
       <button onClick={() => handleClick(false)}>Restar</button>
     </div>
-  );
+  )
 }
 
-export default CountButton;
+export default CountButton

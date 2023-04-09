@@ -1,13 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./index.css";
-import CountButton from "./InitialComponent";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+// import App from './App'
+import './index.css'
+import CountButton from './InitialComponent'
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
   <React.StrictMode>
     <CountButton />
   </React.StrictMode>
-);
+)
